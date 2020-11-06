@@ -1,27 +1,27 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using Random = System.Random;
 
 public class Person : MonoBehaviour
 {
-    [SerializeField]private GameObject checkpoint;
+    [SerializeField] private GameObject checkpoint;
     [SerializeField] private int speed;
-    private Transform[] checkpoints;
+    private Transform[] _checkpoints;
     private Transform _transform;
-    private int index = 1;
+    private Random _random = new Random();
+    private int _index;
+
+    int compteur = 0;
 
     private void Awake()
     {
         _transform = transform;
         checkpoint = GameObject.FindWithTag("checkpoint");
-        checkpoints = checkpoint.GetComponentsInChildren<Transform>();
+        _checkpoints = GetChildren(checkpoint.transform);
+
+
+        _index = GetRandomWay();
         //parent is in table checkpoints on index 0 ==> to change
-        foreach (var check in checkpoints)
-        {
-            print(check.name);
-        }
     }
 
     void FixedUpdate()
@@ -33,14 +33,30 @@ public class Person : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("point"))
         {
-            print("Collision ==> NEXT WAY");
-            index++;
-        } 
+            _index = GetRandomWay();
+            print(compteur++);
+        }
     }
+
     private void Move()
     {
-        Vector3 direction = checkpoints[index].position - _transform.position;
+        Vector3 direction = _checkpoints[_index].position - _transform.position;
         direction = direction.normalized * (speed * Time.deltaTime);
         _transform.Translate(direction);
+    }
+
+    private int GetRandomWay()
+    {
+        return _random.Next(1, _checkpoints.Length);
+    }
+
+    private Transform[] GetChildren(Transform t)
+    {
+        List<Transform> result = new List<Transform>(60);
+        foreach (Transform child in t)
+        {
+            result.Add(child);
+        }
+        return result.ToArray();
     }
 }
