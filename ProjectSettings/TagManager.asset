@@ -6,6 +6,7 @@ TagManager:
   tags:
   - checkpoint
   - point
+  - player
   layers:
   - Default
   - TransparentFX

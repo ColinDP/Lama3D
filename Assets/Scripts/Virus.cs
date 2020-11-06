@@ -9,12 +9,15 @@ using UnityEngine.PlayerLoop;
 public class Virus : MonoBehaviour
 {
 
-    [SerializeField] private Transform target;
+    [SerializeField] private GameObject target;
+    public static GameObject[] players;
     private NavMeshAgent _agent;
 
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
+        players = GameObject.FindGameObjectsWithTag("player");
+        target = players[0];
     }
 
     private void Update()
@@ -24,7 +27,7 @@ public class Virus : MonoBehaviour
     
     private void MoveToTarget()
     {
-        _agent.SetDestination((target.position));
+        _agent.SetDestination((target.transform.position));
     }
 
     void Start()
