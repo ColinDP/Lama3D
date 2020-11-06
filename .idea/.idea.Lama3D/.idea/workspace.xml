@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="721c8aec-71ed-4833-ba43-b4a56b5ca43f" name="Default Changelist" comment="Ajout de Plateau, Joueur, Personne, Virus">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lama3D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lama3D/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Joueur.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Joueur.cs.meta" beforeDir="false" />
     <list default="true" id="721c8aec-71ed-4833-ba43-b4a56b5ca43f" name="Default Changelist" comment="Commit après avoir pull">
       <change afterPath="$PROJECT_DIR$/Assets/Scenes/SceneColin.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scenes/SceneColin/NavMesh.asset" afterDir="false" />
@@ -25,6 +31,8 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Lama.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Virus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Joueur.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       </list>
     </option>
   </component>
@@ -43,6 +51,8 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -74,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604668992459</updated>
-      <workItem from="1604668994049" duration="4855000" />
+      <workItem from="1604668994049" duration="3621000" />
     </task>
     <task id="LOCAL-00001" summary="commit initial">
       <created>1604669149351</created>
@@ -97,21 +107,7 @@
       <option name="project" value="LOCAL" />
       <updated>1604674461197</updated>
     </task>
-    <task id="LOCAL-00004" summary="Ajout SceneColin et installé progrids">
-      <created>1604678246207</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1604678246207</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Commit après avoir pull">
-      <created>1604678403289</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1604678403289</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,18 +121,16 @@
     <MESSAGE value="commit initial" />
     <MESSAGE value="cube qui dit print lama" />
     <MESSAGE value="Ajout de Plateau, Joueur, Personne, Virus" />
-    <MESSAGE value="Ajout SceneColin et installé progrids" />
-    <MESSAGE value="Commit après avoir pull" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit après avoir pull" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de Plateau, Joueur, Personne, Virus" />
   </component>
   <component name="WindowStateProjectService">
     <state x="461" y="184" key="SettingsEditor" timestamp="1604676392261">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604676392261" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1604678416158">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1604674474246">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604678416158" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604674474246" />
   </component>
 </project>
