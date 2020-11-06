@@ -9,6 +9,7 @@ public class Lama : MonoBehaviour
     {
         print("lama");
         print("Alpaga");
+        print("Distance");
     }
 
     // Update is called once per frame
