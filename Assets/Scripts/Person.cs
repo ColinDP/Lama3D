@@ -1,19 +1,46 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Person : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]private GameObject checkpoint;
+    [SerializeField] private int speed;
+    private Transform[] checkpoints;
+    private Transform _transform;
+    private int index = 1;
+
+    private void Awake()
     {
-        
+        _transform = transform;
+        checkpoint = GameObject.FindWithTag("checkpoint");
+        checkpoints = checkpoint.GetComponentsInChildren<Transform>();
+        //parent is in table checkpoints on index 0 ==> to change
+        foreach (var check in checkpoints)
+        {
+            print(check.name);
+        }
     }
-    
-    
-    // Update is called once per frame
-    void Update()
+
+    void FixedUpdate()
     {
-        
+        Move();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag.Equals("point"))
+        {
+            print("Collision ==> NEXT WAY");
+            index++;
+        } 
+    }
+    private void Move()
+    {
+        Vector3 direction = checkpoints[index].position - _transform.position;
+        direction = direction.normalized * (speed * Time.deltaTime);
+        _transform.Translate(direction);
     }
 }
