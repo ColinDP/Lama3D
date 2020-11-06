@@ -7,6 +7,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lama3D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lama3D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Joueur.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Joueur.cs.meta" beforeDir="false" />
+    <list default="true" id="721c8aec-71ed-4833-ba43-b4a56b5ca43f" name="Default Changelist" comment="Commit après avoir pull">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SceneColin.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SceneColin/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SceneColin/NavMesh.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lama3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lama3D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneColin.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneColin.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Virus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Virus.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/Codep/Desktop/Unity/Lama3D/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
