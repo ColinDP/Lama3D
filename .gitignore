@@ -71,5 +71,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Scene
-!/[Aa]ssets/Scenes/TaScene.unity
-!/[Aa]ssets/Scenes/TaScene.unity.meta
+!/[Aa]ssets/Scenes/CopySandbox.unity
+!/[Aa]ssets/Scenes/CopySandbox.unity.meta
