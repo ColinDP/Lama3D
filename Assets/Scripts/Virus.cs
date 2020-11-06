@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class Virus : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    [SerializeField] private Transform target;
+
+    private void MoveToTarget()
+    {
+        
+    }
+
     void Start()
     {
         
