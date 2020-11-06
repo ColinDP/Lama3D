@@ -19,8 +19,7 @@ public class Virus : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButton("Jump"))
-            MoveToTarget();
+        MoveToTarget();
     }
     
     private void MoveToTarget()
