@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
@@ -18,9 +19,7 @@ public class Person : MonoBehaviour
         _transform = transform;
         checkpoint = GameObject.FindWithTag("checkpoint");
         _checkpoints = GetChildren(checkpoint.transform);
-
-
-        _index = GetRandomWay();
+        _index = GetRandomPath();
         //parent is in table checkpoints on index 0 ==> to change
     }
 
@@ -28,26 +27,37 @@ public class Person : MonoBehaviour
     {
         Move();
     }
-
-    private void OnTriggerEnter(Collider other)
+    
+    //For checkpoint
+    private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag.Equals("point"))
         {
-            _index = GetRandomWay();
+            _index = GetRandomPath();
             print(compteur++);
         }
     }
 
     private void Move()
     {
+        //rotate object
+        
         Vector3 direction = _checkpoints[_index].position - _transform.position;
         direction = direction.normalized * (speed * Time.deltaTime);
+        //print(_checkpoints[_index].position)
         _transform.Translate(direction);
     }
 
-    private int GetRandomWay()
+    private int GetRandomPath()
     {
-        return _random.Next(1, _checkpoints.Length);
+        int i = _random.Next(1, _checkpoints.Length);
+        print("PREV : " + _index);
+        if (i != _index)
+        {
+            print("Current : " + i);
+            return i;
+        }
+        return GetRandomPath();
     }
 
     private Transform[] GetChildren(Transform t)
