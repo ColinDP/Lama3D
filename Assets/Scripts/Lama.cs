@@ -8,6 +8,7 @@ public class Lama : MonoBehaviour
     void Start()
     {
         print("lama");
+        print("Alpaga");
     }
 
     // Update is called once per frame
