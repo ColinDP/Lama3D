@@ -24,11 +24,6 @@ public class Person : MonoBehaviour
         //parent is in table checkpoints on index 0 ==> to change
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        throw new NotImplementedException();
-    }
-
     void FixedUpdate()
     {
         Move();
