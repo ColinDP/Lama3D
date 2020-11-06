@@ -24,6 +24,11 @@ public class Person : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        throw new NotImplementedException();
+    }
+
     void FixedUpdate()
     {
         Move();
