@@ -27,9 +27,8 @@ public class Person : MonoBehaviour
     {
         Move();
     }
-    
-    //For checkpoint
-    private void OnCollisionEnter(Collision other)
+
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Equals("point"))
         {
@@ -37,15 +36,20 @@ public class Person : MonoBehaviour
             print(compteur++);
         }
     }
+    
 
     private void Move()
     {
-        //rotate object
+        //rotation
+        _transform.rotation =
+            Quaternion.Slerp(_transform.rotation,
+                Quaternion.LookRotation(_checkpoints[_index].position - _transform.position), speed * Time.deltaTime);
         
+        //direction
         Vector3 direction = _checkpoints[_index].position - _transform.position;
         direction = direction.normalized * (speed * Time.deltaTime);
         //print(_checkpoints[_index].position)
-        _transform.Translate(direction);
+        _transform.Translate(direction, Space.World);
     }
 
     private int GetRandomPath()
