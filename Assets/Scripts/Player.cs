@@ -7,7 +7,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
 {
-    private const float Speed = 5;
+    [SerializeField] private float speed;
     private Rigidbody _rigidbody;
     private Transform _transform;
     private Vector3 _currentVelocity;
@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        speed = 5;
         _rigidbody =  GetComponent<Rigidbody>();
         _transform = GetComponent<Transform>();
     }
@@ -30,7 +31,7 @@ public class Player : MonoBehaviour
         var hInput = Input.GetAxisRaw("Horizontal");
         var vInput = Input.GetAxisRaw("Vertical");
         var direction = new Vector3(-vInput, 0, hInput).normalized;
-        _currentVelocity = Speed * direction;
+        _currentVelocity = speed * direction;
         _currentVelocity.y = _rigidbody.velocity.y;
         
         //??
@@ -61,6 +62,13 @@ public class Player : MonoBehaviour
                 }
             }
         }
+    }
+
+
+    public float Speed
+    {
+        get => speed;
+        set => speed = value;
     }
 
     // private void OnTriggerStay(Collider other)
