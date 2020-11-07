@@ -8,6 +8,7 @@ TagManager:
   - point
   - player
   - ground
+  - virusagent
   layers:
   - Default
   - TransparentFX

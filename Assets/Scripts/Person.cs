@@ -37,7 +37,7 @@ public class Person : MonoBehaviour
         if (other.gameObject.tag.Equals("point"))
         {
             _index = GetRandomPath();
-            print(compteur++);
+            //print(compteur++);
             Move();
         }
     }

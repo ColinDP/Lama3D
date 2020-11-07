@@ -35,6 +35,13 @@ public class Player : MonoBehaviour
         {
             print("collision");
         }
+        //UnityEvent ??
+        if (other.gameObject.tag.Equals("virusagent"))
+        {
+            print("INFECTED BY VIRUS");
+        }
+        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -43,5 +50,6 @@ public class Player : MonoBehaviour
         {
             print("trigger");
         }
+
     }
 }
