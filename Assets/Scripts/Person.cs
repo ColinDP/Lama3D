@@ -6,27 +6,27 @@ using Random = System.Random;
 
 public class Person : MonoBehaviour
 {
-    private GameObject checkpoint;
     [SerializeField] private int speed;
     private Transform[] _checkpoints;
     private Transform _transform;
     private Random _random = new Random();
     private int _index;
     private NavMeshAgent _agent;
-    private GameObject[] checkpoints;
+    private GameObject theOnlyObjectRegroupingCheckpoints;
+    private GameObject[] objectsRegroupingChekpoints;
 
     int compteur = 0;
 
     private void Awake()
     {
         _transform = transform;
-        checkpoint = GameObject.FindWithTag("checkpoint");
-        _checkpoints = GetChildren(checkpoint.transform);
+        theOnlyObjectRegroupingCheckpoints = GameObject.FindWithTag("checkpoint");
+        _checkpoints = GetChildren(theOnlyObjectRegroupingCheckpoints.transform);
         _index = GetRandomPath();
         //parent is in table checkpoints on index 0 ==> to change
         _agent = GetComponent<NavMeshAgent>();
-        checkpoints = GameObject.FindGameObjectsWithTag("checkpoint");
-        checkpoint = checkpoints[0];
+        objectsRegroupingChekpoints = GameObject.FindGameObjectsWithTag("checkpoint");
+        theOnlyObjectRegroupingCheckpoints = objectsRegroupingChekpoints[0];
     }
 
     private void Start()
@@ -34,21 +34,14 @@ public class Person : MonoBehaviour
         Move();
     }
 
-    void FixedUpdate()
-    {
-        // Move();
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Equals("point"))
         {
             _index = GetRandomPath();
-            //print(compteur++);
             Move();
         }
     }
-    
 
     private void Move()
     {
@@ -56,22 +49,25 @@ public class Person : MonoBehaviour
         _transform.rotation =
             Quaternion.Slerp(_transform.rotation,
                 Quaternion.LookRotation(_checkpoints[_index].position - _transform.position), speed * Time.deltaTime);
-        //
-        // //direction
-        // Vector3 direction = _checkpoints[_index].position - _transform.position;
-        // direction = direction.normalized * (speed * Time.deltaTime);
-        // //print(_checkpoints[_index].position)
-        // _transform.Translate(direction, Space.World);
         _agent.SetDestination(_checkpoints[_index].position);
+        for (int i = 0; i < _checkpoints.Length; i++)
+        {
+            if (i == _index)
+            {
+                _checkpoints[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                _checkpoints[i].gameObject.SetActive(false);
+            }
+        }
     }
 
     private int GetRandomPath()
     {
         int i = _random.Next(0, _checkpoints.Length);
-        // print("PREV : " + _index);
         if (i != _index)
         {
-            // print("Current : " + i);
             return i;
         }
         return GetRandomPath();

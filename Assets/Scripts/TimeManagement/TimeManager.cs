@@ -5,12 +5,12 @@ namespace TimeManagement
 {
     public class TimeManager : MonoBehaviour
     {
-        private float _countDown;
+        [SerializeField] private float _countDown;
         public float CountDown => _countDown;
         public Action<float> onCountDownChange;
         private void Awake()
         {
-            _countDown = 15;
+            // _countDown = 15;
         }
 
         private void Update()
