@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4236265132147509720}
   - component: {fileID: 4236265132147509721}
   - component: {fileID: 4236265132147509718}
-  - component: {fileID: 4236265132147509724}
   - component: {fileID: 4236265132147509725}
   m_Layer: 0
   m_Name: Person
@@ -110,19 +109,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 0}
   speed: 12
---- !u!135 &4236265132147509724
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4236265132147509719}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.6132708
-  m_Center: {x: -0.096037865, y: 0, z: 0.57666874}
 --- !u!54 &4236265132147509725
 Rigidbody:
   m_ObjectHideFlags: 0
