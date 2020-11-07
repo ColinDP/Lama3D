@@ -26,6 +26,7 @@
           <e p="Player.cs" t="Include" />
           <e p="SpawnerVirus.cs" t="Include" />
           <e p="Stuff" t="Include">
+            <e p="Bonus.cs" t="Include" />
             <e p="GiveBonus.cs" t="Include" />
           </e>
           <e p="TimeManagement" t="Include">

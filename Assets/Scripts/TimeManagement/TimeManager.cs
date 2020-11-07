@@ -10,7 +10,7 @@ namespace TimeManagement
         public Action<float> onCountDownChange;
         private void Awake()
         {
-            _countDown = 15;
+            _countDown = 60;
         }
 
         private void Update()
