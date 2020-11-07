@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00f202b6-2bfd-4570-a1c3-89fe6028ab6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level1/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level1/NavMesh.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604670364464</updated>
       <workItem from="1604670396195" duration="284000" />
-      <workItem from="1604740181486" duration="10379000" />
+      <workItem from="1604740181486" duration="13182000" />
     </task>
     <servers />
   </component>
