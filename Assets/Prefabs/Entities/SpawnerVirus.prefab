@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6718704610931040401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,5 +46,5 @@ MonoBehaviour:
   virusObject: {fileID: 916988915904674731, guid: 529b672a3aa75a945b1e2e3a754fcd9b,
     type: 3}
   virusClone: {fileID: 0}
-  numberOfViruses: 0
-  timeBetweenInstantiate: 0
+  numberOfViruses: 150
+  timeBetweenInstantiate: 1

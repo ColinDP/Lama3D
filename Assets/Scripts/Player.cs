@@ -43,19 +43,6 @@ public class Player : MonoBehaviour
         _rigidbody.velocity = _currentVelocity;
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (!other.gameObject.tag.Equals("ground"))
-        {
-            print("collision");
-        }
-        //UnityEvent ??
-        if (other.gameObject.tag.Equals("virusagent"))
-        {
-            print("INFECTED BY VIRUS");
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("person"))
@@ -63,15 +50,27 @@ public class Player : MonoBehaviour
             print("Person détectée");
             if (Physics.Raycast(transform.position, other.transform.position-transform.position, out hit))
             {
+                print(hit.collider.gameObject.name);
                 if (!hit.collider.gameObject.CompareTag("person"))
                 {
                     print("Obstacle entre player et person : " + hit.collider.name);
                 }
                 else
                 {
-                    print("INFECTED BY VIRUS");
+                    GameManager.GameManager.Instance.LoadScene("GameOver");
                 }
             }
         }
     }
+
+    // private void OnTriggerStay(Collider other)
+    // {
+    //     StartCoroutine(DangerZone());
+    // }
+    //
+    // IEnumerator DangerZone()
+    // {
+    //     yield return new WaitForSeconds((float)2);
+    //     GameManager.GameManager.Instance.LoadScene("GameOver");
+    // }
 }

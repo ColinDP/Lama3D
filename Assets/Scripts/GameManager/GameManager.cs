@@ -18,7 +18,6 @@ namespace GameManager
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);
-            TimeManager.SetCountDown(0);
         }
 
         public void QuitGame()
