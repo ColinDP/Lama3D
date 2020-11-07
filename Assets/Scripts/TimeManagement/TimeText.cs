@@ -13,15 +13,15 @@ namespace TimeManagement
             text = GetComponent<TMP_Text>();
         }
 
-       /* private void OnEnable()
+        private void OnEnable()
         {
-            UpdateTime(GameManager.Instance.TimeManager.CountDown);
-            GameManager.Instance.TimeManager.onScoreChange += UpdateTime;
-        }*/
+            UpdateTime(GameManager.GameManager.Instance.TimeManager.CountDown);
+            GameManager.GameManager.Instance.TimeManager.onCountDownChange += UpdateTime;
+        }
 
-        private void UpdateTime(int value)
+        private void UpdateTime(float value)
         {
-            text.text = value.ToString();
+            text.text = value.ToString("f0");
         }
     }
 }

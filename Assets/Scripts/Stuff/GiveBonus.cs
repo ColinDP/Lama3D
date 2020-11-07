@@ -1,5 +1,4 @@
-﻿using TimeManagement;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Stuff
 {
@@ -7,7 +6,8 @@ namespace Stuff
     {
         private void OnCollisionEnter(Collision other)
         {
-            other.gameObject.GetComponent<TimeManager>().SetCountDown(2*Time.deltaTime);
+            GameManager.GameManager.Instance.TimeManager.SetCountDown(3);
+            gameObject.SetActive(false);
         }
     }
 }
