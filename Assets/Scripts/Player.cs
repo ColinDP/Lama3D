@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,5 +28,20 @@ public class Player : MonoBehaviour
     {
         _rigidbody.velocity = _currentVelocity;
     }
-    
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (!other.gameObject.tag.Equals("ground"))
+        {
+            print("collision");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.gameObject.tag.Equals("ground"))
+        {
+            print("trigger");
+        }
+    }
 }

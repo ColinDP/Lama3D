@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = System.Random;
 
 public class Person : MonoBehaviour
@@ -11,6 +12,7 @@ public class Person : MonoBehaviour
     private Transform _transform;
     private Random _random = new Random();
     private int _index;
+    private NavMeshAgent _agent;
 
     int compteur = 0;
 
@@ -21,11 +23,13 @@ public class Person : MonoBehaviour
         _checkpoints = GetChildren(checkpoint.transform);
         _index = GetRandomPath();
         //parent is in table checkpoints on index 0 ==> to change
+        _agent = GetComponent<NavMeshAgent>();
+        Move();
     }
 
     void FixedUpdate()
     {
-        Move();
+        // Move();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,31 +38,33 @@ public class Person : MonoBehaviour
         {
             _index = GetRandomPath();
             print(compteur++);
+            Move();
         }
     }
     
 
     private void Move()
     {
-        //rotation
+        // //rotation
         _transform.rotation =
             Quaternion.Slerp(_transform.rotation,
                 Quaternion.LookRotation(_checkpoints[_index].position - _transform.position), speed * Time.deltaTime);
-        
-        //direction
-        Vector3 direction = _checkpoints[_index].position - _transform.position;
-        direction = direction.normalized * (speed * Time.deltaTime);
-        //print(_checkpoints[_index].position)
-        _transform.Translate(direction, Space.World);
+        //
+        // //direction
+        // Vector3 direction = _checkpoints[_index].position - _transform.position;
+        // direction = direction.normalized * (speed * Time.deltaTime);
+        // //print(_checkpoints[_index].position)
+        // _transform.Translate(direction, Space.World);
+        _agent.SetDestination(_checkpoints[_index].position);
     }
 
     private int GetRandomPath()
     {
         int i = _random.Next(1, _checkpoints.Length);
-        print("PREV : " + _index);
+        // print("PREV : " + _index);
         if (i != _index)
         {
-            print("Current : " + i);
+            // print("Current : " + i);
             return i;
         }
         return GetRandomPath();

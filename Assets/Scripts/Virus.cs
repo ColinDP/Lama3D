@@ -27,7 +27,7 @@ public class Virus : MonoBehaviour
     
     private void MoveToTarget()
     {
-        _agent.SetDestination((target.transform.position));
+        _agent.SetDestination(target.transform.position);
     }
 
     void Start()
