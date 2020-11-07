@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 906447940}
   - component: {fileID: 906447939}
   - component: {fileID: 906447943}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6694cfdacd9a147840f722db089df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 0}
   speed: 0
 --- !u!65 &1812191670
 BoxCollider:
@@ -1061,7 +1060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e02398e44e50b040b4b9f81ed41f2e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1477916166}
 --- !u!195 &1818407160
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1198,7 +1196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e02398e44e50b040b4b9f81ed41f2e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1477916160}
 --- !u!1 &1902040766
 GameObject:
   m_ObjectHideFlags: 0
