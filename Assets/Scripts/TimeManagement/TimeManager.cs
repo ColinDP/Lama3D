@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace TimeManagement
 {
@@ -6,23 +7,24 @@ namespace TimeManagement
     {
         private float _countDown;
         public float CountDown => _countDown;
+        public Action<float> onCountDownChange;
         private void Awake()
         {
-            _countDown = 60;
+            _countDown = 15;
         }
 
         private void Update()
         {
-            SetCountDown(-Time.deltaTime);
-            /*if(_countDown == 0)
-                Destroy(GetComponent<Player>());
-                */
+            if(_countDown <0.5)
+                GameManager.GameManager.Instance.LoadScene("GameOver");
+            else
+                SetCountDown(-Time.deltaTime);
         }
 
         public void SetCountDown(float val)
         {
             _countDown += val;
-            print(_countDown);
+            onCountDownChange(_countDown);
         }
     }
 }
