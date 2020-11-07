@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
@@ -10,6 +11,7 @@ public class Player : MonoBehaviour
     private Rigidbody _rigidbody;
     private Transform _transform;
     private Vector3 _currentVelocity;
+    private NavMeshAgent _agent;
 
     private void Awake()
     {
@@ -23,6 +25,7 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
+        
         var hInput = Input.GetAxisRaw("Horizontal");
         var vInput = Input.GetAxisRaw("Vertical");
         var direction = new Vector3(-vInput, 0, hInput).normalized;
@@ -30,7 +33,7 @@ public class Player : MonoBehaviour
         _currentVelocity.y = _rigidbody.velocity.y;
         
         //??
-        _transform.Rotate(new Vector3(0, hInput, 0) * 2f);
+        // _transform.Rotate(new Vector3(0, hInput, 0) * 2f);
         
     }
 
@@ -50,16 +53,18 @@ public class Player : MonoBehaviour
         {
             print("INFECTED BY VIRUS");
         }
-        
-
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.gameObject.tag.Equals("ground"))
+        if (!other.gameObject.CompareTag("ground"))
         {
             print("trigger");
         }
-
+        if (other.gameObject.tag.Equals("virusagent"))
+        {
+            print("INFECTED BY VIRUS");
+        }
     }
+    
 }

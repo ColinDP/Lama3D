@@ -60,7 +60,7 @@ public class Person : MonoBehaviour
 
     private int GetRandomPath()
     {
-        int i = _random.Next(1, _checkpoints.Length);
+        int i = _random.Next(0, _checkpoints.Length);
         // print("PREV : " + _index);
         if (i != _index)
         {
