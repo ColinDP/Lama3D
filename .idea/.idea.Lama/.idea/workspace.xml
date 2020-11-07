@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00f202b6-2bfd-4570-a1c3-89fe6028ab6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Center-wall-level2anim.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Center-wall-level2anim.anim.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
