@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     private Transform _transform;
     private Vector3 _currentVelocity;
     private NavMeshAgent _agent;
+    private RaycastHit hit;
 
     private void Awake()
     {
@@ -57,14 +58,20 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.gameObject.CompareTag("ground"))
+        if (other.gameObject.CompareTag("person"))
         {
-            print("trigger");
-        }
-        if (other.gameObject.tag.Equals("virusagent"))
-        {
-            print("INFECTED BY VIRUS");
+            print("Person détectée");
+            if (Physics.Raycast(transform.position, other.transform.position-transform.position, out hit))
+            {
+                if (!hit.collider.gameObject.CompareTag("person"))
+                {
+                    print("Obstacle entre player et person : " + hit.collider.name);
+                }
+                else
+                {
+                    print("INFECTED BY VIRUS");
+                }
+            }
         }
     }
-    
 }

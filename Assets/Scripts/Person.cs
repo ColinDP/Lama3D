@@ -6,13 +6,14 @@ using Random = System.Random;
 
 public class Person : MonoBehaviour
 {
-    [SerializeField] private GameObject checkpoint;
+    private GameObject checkpoint;
     [SerializeField] private int speed;
     private Transform[] _checkpoints;
     private Transform _transform;
     private Random _random = new Random();
     private int _index;
     private NavMeshAgent _agent;
+    private GameObject[] checkpoints;
 
     int compteur = 0;
 
@@ -24,6 +25,12 @@ public class Person : MonoBehaviour
         _index = GetRandomPath();
         //parent is in table checkpoints on index 0 ==> to change
         _agent = GetComponent<NavMeshAgent>();
+        checkpoints = GameObject.FindGameObjectsWithTag("checkpoint");
+        checkpoint = checkpoints[0];
+    }
+
+    private void Start()
+    {
         Move();
     }
 

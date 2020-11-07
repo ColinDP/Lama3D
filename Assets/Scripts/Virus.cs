@@ -9,7 +9,7 @@ using UnityEngine.PlayerLoop;
 public class Virus : MonoBehaviour
 {
 
-    [SerializeField] private GameObject target;
+    private GameObject target;
     public static GameObject[] players;
     private NavMeshAgent _agent;
     private Rigidbody rb;

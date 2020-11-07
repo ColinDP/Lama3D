@@ -9,6 +9,7 @@ TagManager:
   - player
   - ground
   - virusagent
+  - person
   layers:
   - Default
   - TransparentFX
