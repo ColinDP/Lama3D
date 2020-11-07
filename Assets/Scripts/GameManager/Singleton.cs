@@ -40,12 +40,10 @@ namespace GameManager
             }
             if (persistent)
                 DontDestroyOnLoad(gameObject);
-            Initialize();
         }
 
         protected void OnDisable()
         {
-            Cleanup();
             if (ReferenceEquals(this, _instance))
             {
                 _instance = null;
@@ -53,9 +51,5 @@ namespace GameManager
             }
         }
 
-        protected abstract void Cleanup();
-
-        protected abstract void Initialize();
-        
     }
 }
