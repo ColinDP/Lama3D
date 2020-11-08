@@ -14,6 +14,7 @@ public class Person : MonoBehaviour
     private NavMeshAgent _agent;
     private GameObject theOnlyObjectRegroupingCheckpoints;
     private GameObject[] objectsRegroupingChekpoints;
+    private GameObject currentDestinationObject;
 
     int compteur = 0;
 
@@ -36,9 +37,10 @@ public class Person : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag.Equals("point"))
+        if (other.gameObject.Equals(currentDestinationObject))
         {
             _index = GetRandomPath();
+            currentDestinationObject = _checkpoints[_index].gameObject;
             Move();
         }
     }
