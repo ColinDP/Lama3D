@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
 
     public void SetInvincible(bool val)
     {
-        print("player.cs");
         _invincible = val;
     }
     private NavMeshHit navmeshhit;
@@ -46,16 +45,11 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        
         var hInput = Input.GetAxisRaw("Horizontal");
         var vInput = Input.GetAxisRaw("Vertical");
         var direction = new Vector3(-vInput, 0, hInput).normalized;
         _currentVelocity = speed * direction;
         _currentVelocity.y = _rigidbody.velocity.y;
-        
-        //??
-        // _transform.Rotate(new Vector3(0, hInput, 0) * 2f);
-        
     }
 
     private void FixedUpdate()

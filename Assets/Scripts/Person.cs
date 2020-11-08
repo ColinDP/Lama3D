@@ -53,17 +53,6 @@ public class Person : MonoBehaviour
             Quaternion.Slerp(_transform.rotation,
                 Quaternion.LookRotation(_checkpoints[_index].position - _transform.position), speed * Time.deltaTime);
         _agent.SetDestination(_checkpoints[_index].position);
-        /*for (int i = 0; i < _checkpoints.Length; i++)
-        {
-            if (i == _index)
-            {
-                _checkpoints[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                _checkpoints[i].gameObject.SetActive(false);
-            }
-        }*/
     }
 
     private int GetRandomPath()

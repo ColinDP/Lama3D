@@ -19,14 +19,13 @@ namespace Stuff
 
         private void OnCollisionEnter(Collision other)
         {
-            print(other.rigidbody.GetComponent<Player>().GetInstanceID() + " hashcode : " + other.rigidbody.GetComponent<Player>().GetHashCode());
             bonusCollided = gameObject;
             GenerateRandomBonus(other.rigidbody.GetComponent<Player>(), bonusCollided);
         }
 
         private void GenerateRandomBonus(Player player, GameObject bonusCollided)
         {
-            switch (_random.Next(1,5))
+            switch (_random.Next(4,5))
             {
                 case 1 :
                     _bonus.GiveMoreTime();
