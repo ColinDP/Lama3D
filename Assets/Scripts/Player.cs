@@ -13,10 +13,22 @@ public class Player : MonoBehaviour
     private Vector3 _currentVelocity;
     private NavMeshAgent _agent;
     private RaycastHit hit;
+    private bool _invincible;
+
+    public bool IsInvincible()
+    {
+        return _invincible;
+    }
+
+    public void SetInvincible(bool val)
+    {
+        _invincible = val;
+    }
 
     private void Awake()
     {
         speed = 5;
+        _invincible = false;
         _rigidbody =  GetComponent<Rigidbody>();
         _transform = GetComponent<Transform>();
     }

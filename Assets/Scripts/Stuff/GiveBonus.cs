@@ -18,19 +18,22 @@ namespace Stuff
 
         private void OnCollisionEnter(Collision other)
         {
-            GenerateRandomBonus();
+            GenerateRandomBonus(other.rigidbody.GetComponent<Player>());
             gameObject.SetActive(false);
         }
 
-        private void GenerateRandomBonus()
+        private void GenerateRandomBonus(Player player)
         {
-            switch (_random.Next(1,3))
+            switch (_random.Next(3,4))
             {
                 case 1 :
                     _bonus.GiveMoreTime();
                     break;
                 case 2 :
-                    _bonus.ReduceSpeed();
+                    _bonus.ReduceSpeed(player);
+                    break;
+                case 3 :
+                    _bonus.GiveInvincibility(player);
                     break;
             }
         }
