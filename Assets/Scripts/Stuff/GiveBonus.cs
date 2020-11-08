@@ -26,7 +26,7 @@ namespace Stuff
 
         private void GenerateRandomBonus(Player player, GameObject bonusCollided)
         {
-            switch (_random.Next(3,4))
+            switch (_random.Next(1,5))
             {
                 case 1 :
                     _bonus.GiveMoreTime();
