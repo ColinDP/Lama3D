@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
 
     public void SetInvincible(bool val)
     {
+        print("player.cs");
         _invincible = val;
     }
     private NavMeshHit navmeshhit;

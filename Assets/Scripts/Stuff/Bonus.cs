@@ -16,16 +16,16 @@ namespace Stuff
         {
             _startCoroutine = false;
             _player = null;
-            _interval = 10;
+            _interval = 1;
             _random = new Random();
         }
 
         private void Update()
         {
-            if (_startCoroutine)
-            {
-                StartCoroutine(Invincible());
-            }
+            // if (_startCoroutine)
+            // {
+            //     StartCoroutine(Invincible());
+            // }
         }
 
         public void GiveMoreTime()
@@ -38,14 +38,16 @@ namespace Stuff
             player.Speed -= _random.Next(2, 4);
         }
     
-        public void GiveInvincibility(Player player)
+        public void GiveInvincibility(Player player, GameObject bonusCollided)
         {
             print(player.GetInstanceID() + " hashcode : " + player.GetHashCode());
             _player = player;
-            _startCoroutine = true;
+            // _startCoroutine = true;
+            GetComponent<MeshRenderer>().enabled = false;
+            StartCoroutine(Invincible(bonusCollided));
         }
 
-        private IEnumerator Invincible()
+        private IEnumerator Invincible(GameObject bonusCollided)
         {
             _player.SetInvincible(true);
             print("DEBUUUUUT");
@@ -53,6 +55,7 @@ namespace Stuff
             _player.SetInvincible(false);
             _startCoroutine = false;
             print("FIIIIIN");
+            bonusCollided.SetActive(false);
         }
         
     }

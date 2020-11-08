@@ -9,6 +9,7 @@ namespace Stuff
 
         private Bonus _bonus;
         private Random _random;
+        private GameObject bonusCollided;
 
         private void Awake()
         {
@@ -19,11 +20,12 @@ namespace Stuff
         private void OnCollisionEnter(Collision other)
         {
             print(other.rigidbody.GetComponent<Player>().GetInstanceID() + " hashcode : " + other.rigidbody.GetComponent<Player>().GetHashCode());
-            GenerateRandomBonus(other.rigidbody.GetComponent<Player>());
-            gameObject.SetActive(false);
+            bonusCollided = gameObject;
+            GenerateRandomBonus(other.rigidbody.GetComponent<Player>(), bonusCollided);
+            // gameObject.SetActive(false);
         }
 
-        private void GenerateRandomBonus(Player player)
+        private void GenerateRandomBonus(Player player, GameObject bonusCollided)
         {
             switch (_random.Next(3,4))
             {
@@ -34,7 +36,7 @@ namespace Stuff
                     _bonus.ReduceSpeed(player);
                     break;
                 case 3 :
-                    _bonus.GiveInvincibility(player);
+                    _bonus.GiveInvincibility(player, bonusCollided);
                     break;
             }
         }
