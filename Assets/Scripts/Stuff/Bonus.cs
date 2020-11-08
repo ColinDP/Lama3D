@@ -11,6 +11,8 @@ namespace Stuff
         private float _interval;
         private bool _startCoroutine;
         private Player _player;
+        private GameObject canvas;
+        private Sprite currentBonusSprite;
 
         private void Awake()
         {
@@ -18,6 +20,8 @@ namespace Stuff
             _player = null;
             _interval = 1;
             _random = new Random();
+            // canvas = GameObject.FindWithTag("canvas");
+            // currentBonusSprite = canvas.transform.Find("Icon").GetComponent<SpriteRenderer>().sprite;
         }
 
         private void Update()
@@ -51,6 +55,7 @@ namespace Stuff
         {
             _player.SetInvincible(true);
             print("DEBUUUUUT");
+            currentBonusSprite = null;
             yield return new WaitForSeconds(_interval);
             _player.SetInvincible(false);
             _startCoroutine = false;

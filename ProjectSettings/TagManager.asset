@@ -11,6 +11,7 @@ TagManager:
   - virusagent
   - person
   - bonus
+  - canvas
   layers:
   - Default
   - TransparentFX
