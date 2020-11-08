@@ -13,11 +13,23 @@ public class Player : MonoBehaviour
     private Vector3 _currentVelocity;
     private NavMeshAgent _agent;
     private RaycastHit hit;
+    private bool _invincible;
+
+    public bool IsInvincible()
+    {
+        return _invincible;
+    }
+
+    public void SetInvincible(bool val)
+    {
+        _invincible = val;
+    }
     private NavMeshHit navmeshhit;
 
     private void Awake()
     {
         speed = 5;
+        _invincible = false;
         _rigidbody =  GetComponent<Rigidbody>();
         _transform = GetComponent<Transform>();
     }
@@ -28,11 +40,16 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
+        
         var hInput = Input.GetAxisRaw("Horizontal");
         var vInput = Input.GetAxisRaw("Vertical");
         var direction = new Vector3(-vInput, 0, hInput).normalized;
         _currentVelocity = speed * direction;
         _currentVelocity.y = _rigidbody.velocity.y;
+        
+        //??
+        // _transform.Rotate(new Vector3(0, hInput, 0) * 2f);
+        
     }
 
     private void FixedUpdate()
@@ -63,4 +80,15 @@ public class Player : MonoBehaviour
         get => speed;
         set => speed = value;
     }
+
+    // private void OnTriggerStay(Collider other)
+    // {
+    //     StartCoroutine(DangerZone());
+    // }
+    //
+    // IEnumerator DangerZone()
+    // {
+    //     yield return new WaitForSeconds((float)2);
+    //     GameManager.GameManager.Instance.LoadScene("GameOver");
+    // }
 }

@@ -9,12 +9,7 @@ namespace GameManager
     {
         [SerializeField] private TimeManager timeManager;
         public TimeManager TimeManager => timeManager;
-        protected override void Cleanup()
-        {
-        }
-        protected override void Initialize()
-        {
-        }
+
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);
