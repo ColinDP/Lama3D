@@ -24,6 +24,7 @@ public class Person : MonoBehaviour
         theOnlyObjectRegroupingCheckpoints = GameObject.FindWithTag("checkpoint");
         _checkpoints = GetChildren(theOnlyObjectRegroupingCheckpoints.transform);
         _index = GetRandomPath();
+        currentDestinationObject = _checkpoints[_index].gameObject;
         //parent is in table checkpoints on index 0 ==> to change
         _agent = GetComponent<NavMeshAgent>();
         objectsRegroupingChekpoints = GameObject.FindGameObjectsWithTag("checkpoint");
