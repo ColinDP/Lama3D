@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00f202b6-2bfd-4570-a1c3-89fe6028ab6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stuff.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stuff.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stuff/Bonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stuff/Bonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stuff/GiveBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stuff/GiveBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +52,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DeathManagement/KillOnCollision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Person.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Stuff/Bonus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stuff/GiveBonus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stuff/Bonus.cs" />
       </list>
     </option>
   </component>
