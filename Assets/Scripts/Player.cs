@@ -13,38 +13,35 @@ public class Player : MonoBehaviour
     private Vector3 _currentVelocity;
     private NavMeshAgent _agent;
     private RaycastHit hit;
-    private bool _invincible;
 
-    public bool IsInvincible()
+    public bool Invincible { get; set; }
+
+    public float Speed
     {
-        return _invincible;
+        get => GetComponent<NavMeshAgent>().speed;
+        set => GetComponent<NavMeshAgent>().speed = value;
     }
 
-    public void SetInvincible(bool val)
-    {
-        print("player.cs");
-        _invincible = val;
-    }
     private NavMeshHit navmeshhit;
 
     private void Awake()
     {
         speed = 5;
-        _invincible = false;
+        Invincible = false;
         _rigidbody =  GetComponent<Rigidbody>();
         _transform = GetComponent<Transform>();
     }
     private void Update()
     {
-        // Move();
-        float horInput = Input.GetAxis("Horizontal");
-        float verInput = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(horInput, 0f, verInput);
-        Vector3 moveDestination = transform.position + movement;
+        var horInput = Input.GetAxis("Horizontal");
+        var verInput = Input.GetAxis("Vertical");
+        var movement = new Vector3(horInput, 0f, verInput);
+        var moveDestination = transform.position + movement;
         GetComponent<NavMeshAgent>().destination = moveDestination;
+        // Move();
     }
 
-    private void Move()
+    /*private void Move()
     {
         
         var hInput = Input.GetAxisRaw("Horizontal");
@@ -56,7 +53,7 @@ public class Player : MonoBehaviour
         //??
         // _transform.Rotate(new Vector3(0, hInput, 0) * 2f);
         
-    }
+    }*/
 
     private void FixedUpdate()
     {
@@ -79,12 +76,6 @@ public class Player : MonoBehaviour
                 print("pas mort");
             }
         }
-    }
-    
-    public float Speed
-    {
-        get => speed;
-        set => speed = value;
     }
 
     // private void OnTriggerStay(Collider other)

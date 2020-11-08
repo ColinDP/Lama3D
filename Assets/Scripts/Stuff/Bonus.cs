@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 using Random = System.Random;
 
@@ -10,28 +11,14 @@ namespace Stuff
     {
         private Random _random;
         private float _interval;
-        private bool _startCoroutine;
-        private Player _player;
-        private GameObject canvas;
-        private Sprite currentBonusSprite;
+        private GameObject _canvas;
         private RawImage icon;
 
         private void Awake()
         {
-            _startCoroutine = false;
-            _player = null;
             _interval = 10;
             _random = new Random();
-            canvas = GameObject.FindWithTag("canvas");
-            currentBonusSprite = canvas.transform.Find("Icon").GetComponent<SpriteRenderer>().sprite;
-        }
-
-        private void Update()
-        {
-            // if (_startCoroutine)
-            // {
-            //     StartCoroutine(Invincible());
-            // }
+            _canvas = GameObject.FindWithTag("canvas");
         }
 
         public void GiveMoreTime()
@@ -49,25 +36,34 @@ namespace Stuff
             }
         }
         
-        public void ReduceSpeed(Player player)
+        public void ReduceSpeed(Player player, GameObject bonusCollided)
         {
-            player.Speed -= _random.Next(2, 4);
+            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<SphereCollider>().enabled = false;
+            StartCoroutine(CoroutineReduceSpeed(player,bonusCollided));
+        }
+        
+        private IEnumerator CoroutineReduceSpeed(Player player, GameObject bonusCollided)
+        {
+            var initialSpeed = player.Speed;
+            player.Speed -= _random.Next(1, 4);
+            yield return new WaitForSeconds(2);
+            player.Speed = initialSpeed;
+            bonusCollided.SetActive(false);
         }
 
         public void GiveInvincibility(Player player, GameObject bonusCollided)
         {
-            print(player.GetInstanceID() + " hashcode : " + player.GetHashCode());
-            _player = player;
             GetComponent<MeshRenderer>().enabled = false;
-            StartCoroutine(Invincible(bonusCollided));
+            GetComponent<SphereCollider>().enabled = false;
+            StartCoroutine(CoroutineGiveInvincibility(player,bonusCollided));
         }
 
-        private IEnumerator Invincible(GameObject bonusCollided)
+        private IEnumerator CoroutineGiveInvincibility(Player player, GameObject bonusCollided)
         {
-            _player.SetInvincible(true);
-            currentBonusSprite = null;
+            player.Invincible = true;
             yield return new WaitForSeconds(_interval);
-            _player.SetInvincible(false);
+            player.Invincible = false;
             bonusCollided.SetActive(false);
         }
     }
