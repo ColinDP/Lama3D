@@ -20,19 +20,294 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00f202b6-2bfd-4570-a1c3-89fe6028ab6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Images.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/0ff0ce94a81c9295a3dd266a6194b72f.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/0ff0ce94a81c9295a3dd266a6194b72f.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/27619-7-portal-image.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/27619-7-portal-image.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Capture d’écran 2020-11-08 032412.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/Capture d’écran 2020-11-08 032412.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/bonus.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/bonus.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/corona_virus-10-512.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/corona_virus-10-512.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/hero.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/hero.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/kisspng-portal-magic-animation-5afb37640a9617.7974051515264131560434.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/kisspng-portal-magic-animation-5afb37640a9617.7974051515264131560434.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/spray-512.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/spray-512.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/transp.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/transp.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/troll-face.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/troll-face.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/zomb.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/zomb.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AdditiveSprite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AdditiveSprite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSkyDemoEnvironment_Unity4.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSkyDemoEnvironment_Unity4.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_DemoEnvironment.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_DemoEnvironment.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_DemoEnvironment02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_DemoEnvironment02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_DemoEnvironment_Center.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_DemoEnvironment_Center.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_DemoEnvironment_Light.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_DemoEnvironment_Light.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/AllSky_Logo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/BlackTransparentGradient.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/BlackTransparentGradient.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/HowToUpResSkies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/HowToUpResSkies.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Building.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Building.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_FlagGreen.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_FlagGreen.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Blue.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Blue.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Gold.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Gold.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Red.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Red.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Landscape.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Landscape.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_LightIllum.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_LightIllum.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_LightMetal.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_LightMetal.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_MountainGlow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_MountainGlow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Rock.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Rock.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_SphereSkyReflect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_SphereSkyReflect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_TreeLeaves.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_TreeLeaves.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_TreeTrunk.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_TreeTrunk.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/Landscape.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/Landscape.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/TreeLeaves.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/TreeLeaves.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/TreeTrunk.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/TreeTrunk.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/rock.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Materials/rock.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Moon Glare.flare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Moon Glare.flare.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/MoonGlow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/MoonGlow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Mountain Glare.flare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Mountain Glare.flare.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Sun Glare.flare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/Sun Glare.flare.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/SunGlare.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/SunGlare.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/SunGlow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyDemoEnvironment/SunGlow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyFree_Menu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyFree_Menu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyFree_Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/AllSkyFree_Readme.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Day_BlueSky_Nothing Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Day_BlueSky_Nothing Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Day_BlueSky_Nothing.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Day_BlueSky_Nothing.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cartoon Base NightSky/Cartoon Base NightSky_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Night/Cold Night__Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Cold Sunset/Cold Sunset__Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Deep Dusk/Deep Dusk__Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_EquiRect_flat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_BlueSunset/Epic_BlueSunset_EquiRect_flat.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_EquiRect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Epic_GloriousPink/Epic_GloriousPink_EquiRect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/AllSky_Night_MoonBurst Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/AllSky_Night_MoonBurst Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/AllSky_Night_MoonBurst Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/AllSky_Night_MoonBurst Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/AllSky_Overcast4_Low Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/AllSky_Overcast4_Low Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/AllSky_Overcast4_Low.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/AllSky_Overcast4_Low.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/AllSky_Overcast4_Low.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/AllSky_Overcast4_Low.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/AllSky_Overcast4_Low.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/AllSky_Overcast4_Low.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/game-over-sound-effect-free.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/game-over-sound-effect-free.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/no-copyright-cinematic-trailer-music-cinematic-trailer-background-music-by-music4video.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/no-copyright-cinematic-trailer-music-cinematic-trailer-background-music-by-music4video.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lama/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Skyboxes.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Skyboxes/AllSkyDemoEnvironment.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Skyboxes/AllSkyDemoEnvironment/AdditiveSprite.mat" beforeDir="false" />
@@ -314,64 +589,11 @@
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_5_Down-Y.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Skyboxes/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_5_Down-Y.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Transparent.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Transparent.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Transparent.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Transparent.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Walls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Walls.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Walls.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Walls.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Directional Light.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Directional Light.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Directional Light.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Directional Light.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Checkpoints.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Checkpoints.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Item.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/NextLevelEntry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/NextLevelEntry.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Person.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Person.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/SpawnerVirus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/SpawnerVirus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/VirusAgent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/VirusAgent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ground.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ground.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TextMesh/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TextMesh/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/27619-7-portal-image.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/27619-7-portal-image.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/hero.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/hero.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/item.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/item.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/kisspng-portal-magic-animation-5afb37640a9617.7974051515264131560434.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/kisspng-portal-magic-animation-5afb37640a9617.7974051515264131560434.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/mask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/mask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/spray.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/spray.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/timer.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/timer.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/transp.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/transp.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/troll-face.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/troll-face.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/zomb.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/zomb.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level4.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level4.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level4.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level4.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level4/NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AllLevelsScenes/Level4/NavMesh.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AuriScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AuriScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneColin.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneColin.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneSansBugs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneSansBugs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneSansBugs.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneSansBugs.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneSansBugs.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneSansBugs.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneSansBugs/NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneSansBugs/NavMesh.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeathManagement/KillOnCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DeathManagement/KillOnCollision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Person.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stuff/Bonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stuff/Bonus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stuff/GiveBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stuff/GiveBonus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/27619-7-portal-image.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/27619-7-portal-image.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Capture d’écran 2020-11-08 032412.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Capture d’écran 2020-11-08 032412.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/corona_virus-10-512.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/corona_virus-10-512.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/hero.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/hero.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/kisspng-portal-magic-animation-5afb37640a9617.7974051515264131560434.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/kisspng-portal-magic-animation-5afb37640a9617.7974051515264131560434.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/transp.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/transp.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/troll-face.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/troll-face.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/zomb.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/zomb.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
