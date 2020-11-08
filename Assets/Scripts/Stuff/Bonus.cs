@@ -10,7 +10,7 @@ namespace Stuff
     public class Bonus : MonoBehaviour
     {
         private Random _random;
-        private const float _interval = 7;
+        // private const float _interval = 7;
         private RawImage icon;
         private Texture transpImage;
         private Texture trollImage;
@@ -69,11 +69,8 @@ namespace Stuff
         
         private IEnumerator CoroutineGiveMoreTime()
         {
-            print("before yielded");
             yield return new WaitForSeconds(1);
-            print("yielded");
             icon.texture = transpImage;
-            // go.SetActive(false);
         }
         
         private IEnumerator CoroutineKillAllViruses(GameObject go)
@@ -86,7 +83,7 @@ namespace Stuff
         {
             var initialSpeed = player.Speed;
             player.Speed -= _random.Next(1, 4);
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(10);
             player.Speed = initialSpeed;
             icon.texture = transpImage;
         }
@@ -94,7 +91,7 @@ namespace Stuff
         private IEnumerator CoroutineGiveInvincibility(Player player, GameObject bonusCollided)
         {
             player.Invincible = true;
-            yield return new WaitForSeconds(_interval);
+            yield return new WaitForSeconds(10);
             player.Invincible = false;
             icon.texture = transpImage;
         }

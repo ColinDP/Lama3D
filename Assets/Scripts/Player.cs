@@ -68,7 +68,8 @@ public class Player : MonoBehaviour
             Vector3 direction = other.transform.localPosition;
             if (!NavMesh.Raycast(origin, direction, out navmeshhit, NavMesh.AllAreas))
             {
-                gameObject.GetComponent<Rigidbody>().GetComponent<IDeath>()?.OnDeath();
+                if(!Invincible)
+                    gameObject.GetComponent<Rigidbody>().GetComponent<IDeath>()?.OnDeath();
                 // print("MORT");
             }
             else
