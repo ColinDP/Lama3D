@@ -22,7 +22,6 @@ namespace Stuff
 
         private void Update()
         {
-            print(_startCoroutine);
             if (_startCoroutine)
             {
                 StartCoroutine(Invincible());
@@ -41,8 +40,9 @@ namespace Stuff
     
         public void GiveInvincibility(Player player)
         {
-            _startCoroutine = true;
+            print(player.GetInstanceID() + " hashcode : " + player.GetHashCode());
             _player = player;
+            _startCoroutine = true;
         }
 
         private IEnumerator Invincible()
@@ -54,7 +54,6 @@ namespace Stuff
             _startCoroutine = false;
             print("FIIIIIN");
         }
-    
-
+        
     }
 }
