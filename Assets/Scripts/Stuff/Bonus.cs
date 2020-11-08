@@ -18,7 +18,7 @@ namespace Stuff
         {
             _startCoroutine = false;
             _player = null;
-            _interval = 1;
+            _interval = 10;
             _random = new Random();
             // canvas = GameObject.FindWithTag("canvas");
             // currentBonusSprite = canvas.transform.Find("Icon").GetComponent<SpriteRenderer>().sprite;
@@ -36,7 +36,19 @@ namespace Stuff
         {
             GameManager.GameManager.Instance.TimeManager.SetCountDown(_random.Next(10, 45));
         }
-    
+
+
+        public void KillAllViruses()
+        {
+            var allViruses = GameObject.FindGameObjectsWithTag("virusagent");
+            foreach (var virus in allViruses)
+            {
+               Destroy(virus);
+            }
+        }
+        
+        
+        
         public void ReduceSpeed(Player player)
         {
             player.Speed -= _random.Next(2, 4);
