@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 
-public class OnEntryLoadNextLevel : MonoBehaviour
+namespace OnEntry
 {
-    [SerializeField] private string sceneName;
-    private void OnCollisionEnter(Collision other)
+    public class OnEntryLoadNextLevel : MonoBehaviour
     {
-        if(other.gameObject.name == "Player")
-            GameManager.GameManager.Instance.LoadScene(sceneName);
+        private void OnCollisionEnter(Collision other)
+        {
+            if(other.gameObject.name == "Player")
+                GameManager.GameManager.Instance.LoadNextScene();
+        }
     }
 }

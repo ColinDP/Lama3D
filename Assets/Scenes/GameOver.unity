@@ -278,8 +278,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: U DEAD
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8ddd7774d6f0ffb4188eac62416a1a69, type: 2}
-  m_sharedMaterial: {fileID: 4258009763527126149, guid: 8ddd7774d6f0ffb4188eac62416a1a69,
+  m_fontAsset: {fileID: 11400000, guid: e1adec41fbf5426419527bd14425022d, type: 2}
+  m_sharedMaterial: {fileID: 5991415619143379717, guid: e1adec41fbf5426419527bd14425022d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1285,8 +1285,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1957877872}
-        m_MethodName: LoadScene
-        m_Mode: 5
+        m_MethodName: LoadNextScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
