@@ -46,5 +46,5 @@ MonoBehaviour:
   virusObject: {fileID: 916988915904674731, guid: 529b672a3aa75a945b1e2e3a754fcd9b,
     type: 3}
   virusClone: {fileID: 0}
-  numberOfViruses: 150
+  numberOfViruses: 2
   timeBetweenInstantiate: 1

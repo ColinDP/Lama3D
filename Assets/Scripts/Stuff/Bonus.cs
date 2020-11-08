@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = System.Random;
 
 namespace Stuff
@@ -13,6 +14,7 @@ namespace Stuff
         private Player _player;
         private GameObject canvas;
         private Sprite currentBonusSprite;
+        private RawImage icon;
 
         private void Awake()
         {
@@ -20,8 +22,8 @@ namespace Stuff
             _player = null;
             _interval = 10;
             _random = new Random();
-            // canvas = GameObject.FindWithTag("canvas");
-            // currentBonusSprite = canvas.transform.Find("Icon").GetComponent<SpriteRenderer>().sprite;
+            canvas = GameObject.FindWithTag("canvas");
+            currentBonusSprite = canvas.transform.Find("Icon").GetComponent<SpriteRenderer>().sprite;
         }
 
         private void Update()
@@ -47,18 +49,15 @@ namespace Stuff
             }
         }
         
-        
-        
         public void ReduceSpeed(Player player)
         {
             player.Speed -= _random.Next(2, 4);
         }
-    
+
         public void GiveInvincibility(Player player, GameObject bonusCollided)
         {
             print(player.GetInstanceID() + " hashcode : " + player.GetHashCode());
             _player = player;
-            // _startCoroutine = true;
             GetComponent<MeshRenderer>().enabled = false;
             StartCoroutine(Invincible(bonusCollided));
         }
@@ -66,14 +65,10 @@ namespace Stuff
         private IEnumerator Invincible(GameObject bonusCollided)
         {
             _player.SetInvincible(true);
-            print("DEBUUUUUT");
             currentBonusSprite = null;
             yield return new WaitForSeconds(_interval);
             _player.SetInvincible(false);
-            _startCoroutine = false;
-            print("FIIIIIN");
             bonusCollided.SetActive(false);
         }
-        
     }
 }

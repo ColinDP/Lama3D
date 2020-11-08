@@ -36,7 +36,12 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
-        Move();
+        // Move();
+        float horInput = Input.GetAxis("Horizontal");
+        float verInput = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(horInput, 0f, verInput);
+        Vector3 moveDestination = transform.position + movement;
+        GetComponent<NavMeshAgent>().destination = moveDestination;
     }
 
     private void Move()
