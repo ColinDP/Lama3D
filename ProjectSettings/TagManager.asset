@@ -13,6 +13,7 @@ TagManager:
   - bonus
   - canvas
   - icon
+  - gameManager
   layers:
   - Default
   - TransparentFX

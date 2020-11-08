@@ -13,7 +13,7 @@ namespace Stuff
         private void Awake()
         {
             _random = new Random();
-            _bonus = gameObject.AddComponent<Bonus>();
+            _bonus = GameObject.FindWithTag("gameManager").AddComponent<Bonus>();
         }
 
         private void OnCollisionEnter(Collision other)
@@ -23,7 +23,7 @@ namespace Stuff
 
         private void GenerateRandomBonus(Player player)
         {
-            switch (_random.Next(1,5))
+            switch (_random.Next(4,5))
             {
                 case 1 :
                     _bonus.GiveMoreTime();
@@ -31,12 +31,14 @@ namespace Stuff
                     break;
                 case 2 :
                     _bonus.ReduceSpeed(player, gameObject);
+                    gameObject.SetActive(false);
                     break;
                 case 3 :
                     _bonus.GiveInvincibility(player, gameObject);
+                    gameObject.SetActive(false);
                     break;
                 case 4 :
-                    _bonus.KillAllViruses();
+                    _bonus.KillAllViruses(gameObject);
                     gameObject.SetActive(false);
                     break;
             }

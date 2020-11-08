@@ -10,7 +10,7 @@ namespace Stuff
     public class Bonus : MonoBehaviour
     {
         private Random _random;
-        private float _interval;
+        private const float _interval = 7;
         private RawImage icon;
         private Texture transpImage;
         private Texture trollImage;
@@ -20,7 +20,6 @@ namespace Stuff
 
         private void Awake()
         {
-            _interval = 10;
             _random = new Random();
             icon = GameObject.FindWithTag("icon").GetComponent<RawImage>();
         }
@@ -38,9 +37,10 @@ namespace Stuff
         {
             GameManager.GameManager.Instance.TimeManager.SetCountDown(_random.Next(10, 45));
             icon.texture = timerImage;
+            StartCoroutine(CoroutineGiveMoreTime());
         }
 
-        public void KillAllViruses()
+        public void KillAllViruses(GameObject go)
         {
             var allViruses = GameObject.FindGameObjectsWithTag("virusagent");
             foreach (var virus in allViruses)
@@ -48,31 +48,47 @@ namespace Stuff
                Destroy(virus);
             }
             icon.texture = sprayImage;
+            StartCoroutine(CoroutineKillAllViruses(go));
         }
         
         public void ReduceSpeed(Player player, GameObject bonusCollided)
         {
-            icon.texture = maskImage;
-            GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<SphereCollider>().enabled = false;
+            bonusCollided.GetComponent<MeshRenderer>().enabled = false;
+            bonusCollided.GetComponent<SphereCollider>().enabled = false;
+            icon.texture = trollImage;
             StartCoroutine(CoroutineReduceSpeed(player,bonusCollided));
+        }
+
+        public void GiveInvincibility(Player player, GameObject bonusCollided)
+        {
+            bonusCollided.GetComponent<MeshRenderer>().enabled = false;
+            bonusCollided.GetComponent<SphereCollider>().enabled = false;
+            icon.texture = maskImage;
+            StartCoroutine(CoroutineGiveInvincibility(player,bonusCollided));
+        }
+        
+        private IEnumerator CoroutineGiveMoreTime()
+        {
+            print("before yielded");
+            yield return new WaitForSeconds(1);
+            print("yielded");
+            icon.texture = transpImage;
+            // go.SetActive(false);
+        }
+        
+        private IEnumerator CoroutineKillAllViruses(GameObject go)
+        {
+            yield return new WaitForSeconds(1);
+            icon.texture = transpImage;
         }
         
         private IEnumerator CoroutineReduceSpeed(Player player, GameObject bonusCollided)
         {
             var initialSpeed = player.Speed;
             player.Speed -= _random.Next(1, 4);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
             player.Speed = initialSpeed;
-            bonusCollided.SetActive(false);
-        }
-
-        public void GiveInvincibility(Player player, GameObject bonusCollided)
-        {
-            GetComponent<MeshRenderer>().enabled = false;
-            icon.texture = trollImage;
-            GetComponent<SphereCollider>().enabled = false;
-            StartCoroutine(CoroutineGiveInvincibility(player,bonusCollided));
+            icon.texture = transpImage;
         }
 
         private IEnumerator CoroutineGiveInvincibility(Player player, GameObject bonusCollided)
@@ -80,7 +96,7 @@ namespace Stuff
             player.Invincible = true;
             yield return new WaitForSeconds(_interval);
             player.Invincible = false;
-            bonusCollided.SetActive(false);
+            icon.texture = transpImage;
         }
     }
 }
