@@ -18,6 +18,7 @@ namespace Stuff
 
         private void OnCollisionEnter(Collision other)
         {
+            print(other.rigidbody.GetComponent<Player>().GetInstanceID() + " hashcode : " + other.rigidbody.GetComponent<Player>().GetHashCode());
             GenerateRandomBonus(other.rigidbody.GetComponent<Player>());
             gameObject.SetActive(false);
         }
