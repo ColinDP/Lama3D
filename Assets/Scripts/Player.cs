@@ -22,10 +22,6 @@ public class Player : MonoBehaviour
         set => GetComponent<NavMeshAgent>().speed = value;
     }
 
-    public void SetInvincible(bool val)
-    {
-        _invincible = val;
-    }
     private NavMeshHit navmeshhit;
 
     private void Awake()
@@ -45,19 +41,19 @@ public class Player : MonoBehaviour
         GetComponent<NavMeshAgent>().destination = moveDestination;
     }
 
-    private void Move()
-    {
-        
-        var hInput = Input.GetAxisRaw("Horizontal");
-        var vInput = Input.GetAxisRaw("Vertical");
-        var direction = new Vector3(-vInput, 0, hInput).normalized;
-        _currentVelocity = speed * direction;
-        _currentVelocity.y = _rigidbody.velocity.y;
-        
-        //??
-        // _transform.Rotate(new Vector3(0, hInput, 0) * 2f);
-        
-    }
+    // private void Move()
+    // {
+    //     
+    //     var hInput = Input.GetAxisRaw("Horizontal");
+    //     var vInput = Input.GetAxisRaw("Vertical");
+    //     var direction = new Vector3(-vInput, 0, hInput).normalized;
+    //     _currentVelocity = speed * direction;
+    //     _currentVelocity.y = _rigidbody.velocity.y;
+    //     
+    //     //??
+    //     // _transform.Rotate(new Vector3(0, hInput, 0) * 2f);
+    //     
+    // }
 
     private void FixedUpdate()
     {
@@ -72,8 +68,8 @@ public class Player : MonoBehaviour
             Vector3 direction = other.transform.localPosition;
             if (!NavMesh.Raycast(origin, direction, out navmeshhit, NavMesh.AllAreas))
             {
-                // gameObject.GetComponent<Rigidbody>().GetComponent<IDeath>()?.OnDeath();
-                print("MORT");
+                gameObject.GetComponent<Rigidbody>().GetComponent<IDeath>()?.OnDeath();
+                // print("MORT");
             }
             else
             {
