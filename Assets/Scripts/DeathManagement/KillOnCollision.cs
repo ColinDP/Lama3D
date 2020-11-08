@@ -6,7 +6,7 @@ namespace DeathManagement
     {
         private void OnCollisionEnter(Collision other)
         {
-            if(!other.rigidbody.GetComponent<Player>().IsInvincible())
+            if(!other.rigidbody.GetComponent<Player>().Invincible)
                 other.rigidbody.GetComponent<IDeath>()?.OnDeath();
         }
     }

@@ -9,7 +9,6 @@ namespace Stuff
 
         private Bonus _bonus;
         private Random _random;
-        private GameObject bonusCollided;
 
         private void Awake()
         {
@@ -19,24 +18,22 @@ namespace Stuff
 
         private void OnCollisionEnter(Collision other)
         {
-            bonusCollided = gameObject;
-            GenerateRandomBonus(other.rigidbody.GetComponent<Player>(), bonusCollided);
+            GenerateRandomBonus(other.rigidbody.GetComponent<Player>());
         }
 
-        private void GenerateRandomBonus(Player player, GameObject bonusCollided)
+        private void GenerateRandomBonus(Player player)
         {
-            switch (_random.Next(4,5))
+            switch (_random.Next(1,5))
             {
                 case 1 :
                     _bonus.GiveMoreTime();
                     gameObject.SetActive(false);
                     break;
                 case 2 :
-                    _bonus.ReduceSpeed(player);
-                    gameObject.SetActive(false);
+                    _bonus.ReduceSpeed(player, gameObject);
                     break;
                 case 3 :
-                    _bonus.GiveInvincibility(player, bonusCollided);
+                    _bonus.GiveInvincibility(player, gameObject);
                     break;
                 case 4 :
                     _bonus.KillAllViruses();

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
-using UnityEditor;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 using Random = System.Random;
 
@@ -11,9 +11,6 @@ namespace Stuff
     {
         private Random _random;
         private float _interval;
-        private bool _startCoroutine;
-        private Player _player;
-        private GameObject canvas;
         private RawImage icon;
         private Texture transpImage;
         private Texture trollImage;
@@ -23,8 +20,6 @@ namespace Stuff
 
         private void Awake()
         {
-            _startCoroutine = false;
-            _player = null;
             _interval = 10;
             _random = new Random();
             icon = GameObject.FindWithTag("icon").GetComponent<RawImage>();
@@ -39,20 +34,11 @@ namespace Stuff
             sprayImage = Resources.Load("Sprites/spray") as Texture;
         }
 
-        private void Update()
-        {
-            // if (_startCoroutine)
-            // {
-            //     StartCoroutine(Invincible());
-            // }
-        }
-
         public void GiveMoreTime()
         {
             GameManager.GameManager.Instance.TimeManager.SetCountDown(_random.Next(10, 45));
             icon.texture = timerImage;
         }
-
 
         public void KillAllViruses()
         {
@@ -64,27 +50,36 @@ namespace Stuff
             icon.texture = sprayImage;
         }
         
-        public void ReduceSpeed(Player player)
+        public void ReduceSpeed(Player player, GameObject bonusCollided)
         {
-            player.Speed -= _random.Next(2, 4);
             icon.texture = maskImage;
+            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<SphereCollider>().enabled = false;
+            StartCoroutine(CoroutineReduceSpeed(player,bonusCollided));
+        }
+        
+        private IEnumerator CoroutineReduceSpeed(Player player, GameObject bonusCollided)
+        {
+            var initialSpeed = player.Speed;
+            player.Speed -= _random.Next(1, 4);
+            yield return new WaitForSeconds(2);
+            player.Speed = initialSpeed;
+            bonusCollided.SetActive(false);
         }
 
         public void GiveInvincibility(Player player, GameObject bonusCollided)
         {
-            print(player.GetInstanceID() + " hashcode : " + player.GetHashCode());
-            _player = player;
             GetComponent<MeshRenderer>().enabled = false;
-            gameObject.GetComponent<Texture>();
             icon.texture = trollImage;
-            StartCoroutine(Invincible(bonusCollided));
+            GetComponent<SphereCollider>().enabled = false;
+            StartCoroutine(CoroutineGiveInvincibility(player,bonusCollided));
         }
 
-        private IEnumerator Invincible(GameObject bonusCollided)
+        private IEnumerator CoroutineGiveInvincibility(Player player, GameObject bonusCollided)
         {
-            _player.SetInvincible(true);
+            player.Invincible = true;
             yield return new WaitForSeconds(_interval);
-            _player.SetInvincible(false);
+            player.Invincible = false;
             bonusCollided.SetActive(false);
         }
     }
