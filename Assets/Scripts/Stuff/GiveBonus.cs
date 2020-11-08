@@ -23,7 +23,7 @@ namespace Stuff
 
         private void GenerateRandomBonus(Player player)
         {
-            switch (_random.Next(4,5))
+            switch (_random.Next(1,5))
             {
                 case 1 :
                     _bonus.GiveMoreTime();
